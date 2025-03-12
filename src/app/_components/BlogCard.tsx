@@ -12,7 +12,7 @@ interface BlogCardProps {
 const BlogCard: FC<BlogCardProps> = ({ blog }) => {
   return (
     <Link href={`/blogs/${blog.slug}`}>
-      <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm dark:bg-gray-800 dark:border-gray-700">
+      <div className="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow-sm ">
         <div className="relative w-full h-[220px] rounded-lg overflow-hidden">
           <Image
             src={blog.thumbnail}
@@ -24,11 +24,11 @@ const BlogCard: FC<BlogCardProps> = ({ blog }) => {
         </div>
 
         <a href="#">
-          <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-blue-800 dark:text-white">
+          <h5 className="mt-4 mb-2 text-2xl font-bold tracking-tight text-blue-800 line-clamp-2">
             {blog.title}
           </h5>
         </a>
-        <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
+        <p className="mb-3 font-normal text-gray-700 line-clamp-3">
           {blog.description}
         </p>
         <p className="font-light text-sm">
@@ -37,7 +37,7 @@ const BlogCard: FC<BlogCardProps> = ({ blog }) => {
 
         <a
           href="#"
-          className="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 dark:bg-blue-600 dark:hover:bg-blue-700 dark:focus:ring-blue-800"
+          className="mt-4 inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-blue-700 rounded-lg hover:bg-blue-800 focus:ring-4 focus:outline-none focus:ring-blue-300 "
         >
           Read more
           <svg

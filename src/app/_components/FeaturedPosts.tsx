@@ -19,7 +19,7 @@ const FeaturedPosts = async () => {
   }
 
   return (
-    <div className="p-12">
+    <div className="p-12 max-w-6xl mx-auto">
       <h2 className="text-center text-3xl font-bold pb-8">Featured Posts</h2>
 
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4">
